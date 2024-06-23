@@ -41,3 +41,10 @@ article {
 .prose-link i {
   --at-apply: text-sm mr-1;
 }
+
+.circle-image {
+  width: 300px; /* Adjust the size as needed */
+  height: 300px; /* Ensure the width and height are equal to make it a circle */
+  border-radius: 50%; /* 50% makes a perfect circle */
+  object-fit: cover; /* Ensure the image covers the circle area */
+}
