@@ -66,15 +66,15 @@ export const siteConfig = {
     blogLinks: [
       {
         text: 'Blog',
-        href: '/blog',
+        href: '',
       },
       {
         text: 'Notes',
-        href: '/blog/notes',
+        href: '/notes',
       },
       {
         text: 'Talks',
-        href: '/blog/talks',
+        href: '/talks',
       },
     ],
   },
