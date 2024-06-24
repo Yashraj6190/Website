@@ -43,9 +43,14 @@ function formatCanonicalURL(url: string | URL) {
 <meta name="generator" content={Astro.generator} />
 
 <!-- Low Priority Global Metadata -->
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="sitemap" href="/sitemap-index.xml" />
-<link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" />
+<link rel="icon" type="image/svg+xml" href="/Website/favicon.svg" />
+<link rel="sitemap" href="/Website/sitemap-index.xml" />
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  href="/Website/rss.xml"
+  title="RSS"
+/>
 
 <!-- Page Metadata -->
 <link rel="canonical" href={formatCanonicalURL(canonicalURL)} />
