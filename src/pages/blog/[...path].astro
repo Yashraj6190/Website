@@ -17,11 +17,15 @@ export async function getStaticPaths() {
 }
 
 const { path } = Astro.params
-
 const posts = await getPosts(path)
 
 function activeLink(pathname: string) {
-  return Astro.url.pathname.replace(/\/+/g, '/').replace(/\/$/, '') === pathname
+  const fullPathname = `${import.meta.env.BASE_URL}${pathname.replace(/^\/+|\/+$/g, '')}`
+  const astroPathname = Astro.url.pathname.replace(/^\/+|\/+$/g, '')
+  const fullAstroPathname = `${import.meta.env.BASE_URL}${astroPathname.replace(import.meta.env.BASE_URL, '')}`
+  console.log('Full Active Link Pathname:', fullPathname)
+  console.log('Full Astro URL Pathname:', fullAstroPathname)
+  return fullPathname === fullAstroPathname
 }
 ---
 
@@ -37,7 +41,7 @@ function activeLink(pathname: string) {
         <a
           aria-label={nav.text}
           class={`nav-link text-3xl font-bold ${activeLink(nav.href) ? 'opacity-80' : 'opacity-30 hover:opacity-50'}`}
-          href={nav.href}
+          href={`${import.meta.env.BASE_URL}blog${nav.href}`}
         >
           {nav.text}
         </a>

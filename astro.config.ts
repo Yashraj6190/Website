@@ -6,7 +6,8 @@ import vue from '@astrojs/vue'
 
 export default defineConfig({
   site: 'https://Yashraj6190.github.io',
-  base: '/Website',
+  base: '/Website/',
+  // trailingSlash: "always",
   server: {
     port: 1977,
   },

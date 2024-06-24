@@ -41,23 +41,24 @@ export const siteConfig = {
     logo: {
       src: '/Website/favicon.svg',
       alt: 'Logo Image',
+      href: '/Website/',
     },
     navLinks: [
       {
         text: 'Blog',
-        href: '/blog',
+        href: '/Website/blog',
       },
       {
         text: 'Notes',
-        href: '/blog/notes',
+        href: '/Website/blog/notes',
       },
       {
         text: 'Talks',
-        href: '/blog/talks',
+        href: '/Website/blog/talks',
       },
       {
         text: 'Projects',
-        href: '/projects',
+        href: '/Website/projects',
       },
     ],
   },
