@@ -1,13 +1,36 @@
 import type { CollectionEntry } from 'astro:content'
 
+// Define your post collection key
 export type PostKey = 'blog'
 
-export type CollectionPosts = CollectionEntry<PostKey>
+// Define the structure of your blog post entries
+export type CollectionPosts = CollectionEntry<PostKey> & {
+  data: {
+    title: string
+    date?: string
+    description?: string
+    image?: {
+      src: string
+      alt?: string
+    }
+    duration?: string
+    draft?: boolean
+    lang?: string
+    tag?: string
+    redirect?: string
+    video?: boolean
+    supervisor?: Supervisor | Supervisor[]
+    timeDuration?: string
+  }
+}
 
+// Define your pages collection key
 export type Pages = 'pages'
 
+// Define the structure of your page entries
 export type CollectionPages = CollectionEntry<Pages>
 
+// Define the structure for the ProjectData array
 export type ProjectData = Array<{
   title: string
   projects: Array<{
@@ -15,5 +38,13 @@ export type ProjectData = Array<{
     description?: string
     icon?: string
     href: string
+    duration?: string
+    supervisor?: Supervisor | Supervisor[]
   }>
 }>
+
+// Define the Supervisor type separately
+export interface Supervisor {
+  name: string
+  url: string
+}

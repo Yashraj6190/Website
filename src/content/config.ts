@@ -16,6 +16,13 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    supervisor: z
+      .object({
+        name: z.string(), // The supervisor's name
+        url: z.string().url(), // The supervisor's URL, validated as a proper URL
+      })
+      .optional(),
+    timeDuartion: z.string().optional(),
     duration: z.string().optional(),
     image: z
       .object({
@@ -29,7 +36,7 @@ const blog = defineCollection({
         year: 'numeric',
         month: 'short',
         day: 'numeric',
-      })),
+      })).optional(),
     draft: z.boolean().default(false).optional(),
     lang: z.string().default('en-US').optional(),
     tag: z.string().optional().optional(),

@@ -52,10 +52,10 @@ export const siteConfig = {
         text: 'Notes',
         href: '/Website/blog/notes',
       },
-      {
-        text: 'Talks',
-        href: '/Website/blog/talks',
-      },
+      // {
+      //   text: 'Talks',
+      //   href: '/Website/blog/talks',
+      // },
       {
         text: 'Projects',
         href: '/Website/projects',
@@ -72,21 +72,17 @@ export const siteConfig = {
         text: 'Notes',
         href: '/notes',
       },
-      {
-        text: 'Talks',
-        href: '/talks',
-      },
     ],
   },
   footer: {
     navLinks: [
       {
         text: 'Posts Props',
-        href: '/posts-props',
+        href: '/Website/posts-props',
       },
       {
         text: 'Markdown Style',
-        href: '/md-style',
+        href: '/Website/md-style',
       },
       {
         text: 'View on Astro',

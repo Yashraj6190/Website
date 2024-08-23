@@ -48,6 +48,7 @@ export default defineConfig({
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [
     'i-ri-file-list-2-line',
+    'i-maki-campsite',
     'i-carbon-campsite',
     'i-simple-icons-github',
     'i-simple-icons-x',
@@ -59,5 +60,13 @@ export default defineConfig({
     'i-simple-icons-sinaweibo',
     'i-ri-github-line',
     'i-ri-twitter-x-line',
+    'i-game-icons-galaxy',
+    'i-articons-antimatter-dimensions',
+    'i-line-md-star-pulsating-loop',
+    'i-emojione-monotone-satellite-antenna',
+    'i-icon-park-solid-halo',
+    'i-material-symbols-light-satellite-alt-sharp',
+    'i-basil-processor-outline',
+    'i-ph-memory-light',
   ],
 })
