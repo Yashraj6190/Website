@@ -47,6 +47,7 @@ export const projectData: ProjectData = [
         description: 'Your project description information is a long piece of text.',
         icon: 'i-material-symbols-light-satellite-alt-sharp',
         href: '/Website/posts/projects/project-5',
+        duration: '2021 - 2023',
       },
     ],
   },
