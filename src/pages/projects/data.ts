@@ -14,7 +14,7 @@ export const projectData: ProjectData = [
       },
       {
         text: 'Signatures of Self-Interacting Dark Matter from Galaxies Falling into Galaxy Clusters',
-        description: 'Your project description information is a long piece of text.',
+        description: 'Research project carried out at CAST group, LMU Munich under the supervison of Dr. Moritz Fischer, Dr. Klaus Dolag and Dr. T K Jha',
         icon: 'i-game-icons-galaxy',
         href: '/Website/posts/projects/project-2',
         duration: 'Jan 2023 - Dec 2023',
@@ -25,8 +25,8 @@ export const projectData: ProjectData = [
       },
       {
         text: 'Cause of Variability in Stars',
-        description: 'Your project description information is a long piece of text.',
-        icon: 'i-line-md-star-pulsating-loop',
+        description: 'Research project conducted at BITS Goa, under the supervision of Dr. T K Jha',
+        icon: 'i-line-md-star-pulsating-twotone-loop',
         href: '/Website/posts/projects/project-3',
         duration: 'Jan 2021 - May 2021',
       },
@@ -37,14 +37,14 @@ export const projectData: ProjectData = [
     projects: [
       {
         text: 'Broadband Characteristics of Spiral Antennas',
-        description: 'Your project description information is a long piece of text.',
+        description: 'Project Conducted under the supervision of Dr. H Sonalikar',
         icon: 'i-emojione-monotone-satellite-antenna',
         href: '/Website/posts/projects/project-4',
         duration: 'Jan 2023 - May 2023',
       },
       {
         text: 'Project Einsat',
-        description: 'Your project description information is a long piece of text.',
+        description: 'Group project as a part of the Astronomy and Astrophysics club of BITS Goa, Celestia',
         icon: 'i-material-symbols-light-satellite-alt-sharp',
         href: '/Website/posts/projects/project-5',
         duration: '2021 - 2023',
@@ -56,17 +56,17 @@ export const projectData: ProjectData = [
     projects: [
       {
         text: 'Single-Cycle MIPS Processor in Verilog',
-        description: 'Your project description information is a long piece of text.',
+        description: 'Verilog project completed as part of the Computer Architechture course',
         icon: 'i-basil-processor-outline',
-        href: '/Website/posts/projects/project-4',
-        duration: 'Jan 2023 - May 2023',
+        href: '/Website/posts/projects/project-6',
+        duration: 'May 2023 - July 2023',
       },
       {
         text: 'EPROM Programmer',
-        description: 'Your project description information is a long piece of text.',
+        description: 'Group project completed as part of the course Microprocessors and Interfacing',
         icon: 'i-ph-memory-light',
-        href: '/Website/posts/projects/project-5',
-        duration: 'Jan 2023 - May 2023',
+        href: '/Website/posts/projects/project-7',
+        duration: 'Feb 2022 - April 2022',
       },
     ],
   },

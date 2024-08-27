@@ -38,17 +38,23 @@ function getDate(date: string) {
   <article class="prose">
     <h1>{title}</h1>
     {
-      supervisor && (
+      supervisor && Array.isArray(supervisor) && supervisor.length > 0 && (
         <p>
-          <strong>Supervisor: </strong>
-          <a href={supervisor.url}>{supervisor.name}</a>
+          <strong>Supervisors: </strong>
+          {supervisor.map((sup, index) => (
+            <span>
+              <a href={sup.url}>{sup.name}</a>
+              {index < supervisor.length - 1 && ', '}
+            </span>
+          ))}
         </p>
       )
     }
+
     <p op-50>
       {date && <time datetime={getDate(date)}>{date}</time>}
-      {duration && <span>· {duration}</span>}
-      {timeDuration && <span>· {timeDuration}</span>}
+      {duration && <span> {duration}</span>}
+      {timeDuration && <span> {timeDuration}</span>}
       {tag && <span>· {tag}</span>}
     </p>
     {

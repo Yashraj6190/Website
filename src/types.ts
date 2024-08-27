@@ -19,7 +19,7 @@ export type CollectionPosts = CollectionEntry<PostKey> & {
     tag?: string
     redirect?: string
     video?: boolean
-    supervisor?: Supervisor | Supervisor[]
+    supervisor?: Supervisor[] // Always an array, even for a single supervisor
     timeDuration?: string
   }
 }
@@ -39,12 +39,12 @@ export type ProjectData = Array<{
     icon?: string
     href: string
     duration?: string
-    supervisor?: Supervisor | Supervisor[]
+    supervisor?: Supervisor[] // Always an array, even for a single supervisor
   }>
 }>
 
 // Define the Supervisor type separately
 export interface Supervisor {
   name: string
-  url: string
+  url?: string
 }

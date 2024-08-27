@@ -17,11 +17,13 @@ const blog = defineCollection({
     title: z.string().optional(),
     description: z.string().optional(),
     supervisor: z
-      .object({
-        name: z.string(), // The supervisor's name
-        url: z.string().url(), // The supervisor's URL, validated as a proper URL
-      })
-      .optional(),
+      .array(
+        z.object({
+          name: z.string(), // The supervisor's name
+          url: z.string().url(), // The supervisor's URL, validated as a proper URL
+        }),
+      )
+      .optional(), // Now allowing supervisor to be an array of objects
     timeDuartion: z.string().optional(),
     duration: z.string().optional(),
     image: z

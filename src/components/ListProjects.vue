@@ -8,7 +8,7 @@ defineProps<{
     duration?: string
     supervisor?: {
       name: string
-      link: string
+      url: string
     }
   }[]
 }>()
@@ -33,7 +33,7 @@ defineProps<{
           </div>
           <div v-if="project.supervisor" class="opacity-50 text-sm mt-1">
             <strong>Supervisor:</strong>
-            <a :href="project.supervisor.link" class="supervisor-link">{{ project.supervisor.name }}</a>
+            <a :href="project.supervisor.url" class="supervisor-url">{{ project.supervisor.name }}</a>
           </div>
           <div class="opacity-50 text-sm mt-2">{{ project.description }}</div>
         </div>

@@ -8,6 +8,7 @@ export const siteConfig = {
     alt: 'Website Main Image',
   },
   email: 'yashrajp1007@gmail.com',
+  phone: '+91 8080097583',
   socialLinks: [
     {
       text: 'GitHub',
@@ -26,17 +27,37 @@ export const siteConfig = {
       href: 'https://www.linkedin.com/in/yashraj-patil-0849331a4',
       icon: 'i-simple-icons-linkedin',
     },
-    // {
-    //   text: 'Blog',
-    //   href: '',
-    //   icon: 'i-simple-icons-w',
-    // },
+    {
+      text: 'Blog',
+      href: 'https://www.siriusnoir.wordpress.com',
+      icon: 'i-fa-brands-wordpress-simple',
+    },
     // {
     //   text: 'Youtube',
     //   href: '',
     //   icon: 'i-simple-icons-youtube',
     // },
   ],
+
+  researchInterests: [
+    {
+      text: 'Machine Learning Applications in Astrophysics',
+      icon: 'i-eos-icons-machine-learning-outlined', // Replace with appropriate icon class
+    },
+    {
+      text: 'Numerical Simulations',
+      icon: 'i-icon-park-outline-code-computer', // Replace with appropriate icon class
+    },
+    {
+      text: 'Self-interacting Dark Matter',
+      icon: 'i-file-icons:electron', // Replace with appropriate icon class
+    },
+    {
+      text: 'Galaxy Formation and Evolution',
+      icon: 'i-game-icons-galaxy', // Replace with appropriate icon class
+    },
+  ],
+
   header: {
     logo: {
       src: '/Website/favicon.svg',
@@ -44,21 +65,27 @@ export const siteConfig = {
       href: '/Website/',
     },
     navLinks: [
-      {
-        text: 'Blog',
-        href: '/Website/blog',
-      },
-      {
-        text: 'Notes',
-        href: '/Website/blog/notes',
-      },
+
+      // {
+      //   text: 'Notes',
+      //   href: '/Website/blog/notes',
+      // },
       // {
       //   text: 'Talks',
       //   href: '/Website/blog/talks',
       // },
+
+      { text: 'Interests', href: '/Website/#research-interests' },
+      { text: 'Skills', href: '/Website/#skills' },
+      // { text: 'Projects', href: '/Website/#projects' },
+      { text: 'Contact', href: '/Website/#contact' },
       {
         text: 'Projects',
         href: '/Website/projects',
+      },
+      {
+        text: 'Blog',
+        href: '/Website/blog',
       },
     ],
   },
