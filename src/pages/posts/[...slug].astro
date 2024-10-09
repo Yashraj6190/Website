@@ -1,0 +1,69 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { type CollectionPosts } from '@/types'
+import { getPosts } from '@/utils/posts'
+
+export async function getStaticPaths() {
+  const posts = await getPosts()
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: {
+      post,
+    },
+  }))
+}
+
+type Props = { post: CollectionPosts }
+
+const { post } = Astro.props
+const {
+  title,
+  image,
+  description,
+  date,
+  duration,
+  tag,
+  supervisor,
+  timeDuration,
+} = post.data
+
+const { Content } = await post.render()
+
+function getDate(date: string) {
+  return new Date(date).toISOString()
+}
+---
+
+<BaseLayout title={title} description={description} pageType="article">
+  <article class="prose">
+    <h1>{title}</h1>
+    {
+      supervisor && Array.isArray(supervisor) && supervisor.length > 0 && (
+        <p>
+          <strong>Supervisors: </strong>
+          {supervisor.map((sup, index) => (
+            <span>
+              <a href={sup.url}>{sup.name}</a>
+              {index < supervisor.length - 1 && ', '}
+            </span>
+          ))}
+        </p>
+      )
+    }
+
+    <p op-50>
+      {date && <time datetime={getDate(date)}>{date}</time>}
+      {duration && <span> {duration}</span>}
+      {timeDuration && <span> {timeDuration}</span>}
+      {tag && <span>· {tag}</span>}
+    </p>
+    {
+      image && (
+        <p>
+          <img width="640" height="360" src={image.src} alt={image.alt || ''} />
+        </p>
+      )
+    }
+    <Content />
+  </article>
+</BaseLayout>

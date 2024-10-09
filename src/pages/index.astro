@@ -1,0 +1,343 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import siteConfig from '@/site-config'
+---
+
+<BaseLayout description={siteConfig.description}>
+  <article class="prose">
+    <h1 class="text-title">Yashraj Patil</h1>
+    <h2>Astrophysics PhD Aspirant</h2>
+
+    <!-- Introduction Section -->
+    <p>
+      I am a passionate astrophysics enthusiast, dedicated to exploring the
+      mysteries of the universe through research and innovation. Currently
+      seeking opportunities to pursue a PhD in Astrophysics, I am particularly
+      interested in areas like Machine Learning Applications in Astrophysics,
+      Computational Astrophysics, Dark Matter and Galaxy Formation and
+      Evolution.
+    </p>
+
+    <!-- Image Section -->
+    <pimg>
+      <img
+        class="circle-image"
+        src="/Website/Yashraj_Photo.png"
+        alt="Yashraj Patil"
+      />
+    </pimg>
+
+    <!-- Brief Description -->
+    <p>
+      My academic journey has equipped me with a strong foundation in physics
+      and mathematics, alongside experience in numerical simulations and data
+      analysis. I am fascinated by the advancements we have made in artificial
+      intelligence and I wish to apply machine learning to explore the field of
+      astrophysics.
+    </p>
+
+    <!-- Research Interests Section -->
+    <h3 id="research-interests">Research Interests</h3>
+    <div class="research-interests">
+      {
+        siteConfig.researchInterests.map((interest) => (
+          <div class="research-item">
+            <i class={interest.icon} />
+            <span>
+              <h5>{interest.text}</h5>
+            </span>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Styles for Research Interests Section -->
+    <style>
+      .research-interests {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+        gap: 1em; /* Gap between items */
+        font-size: 0.95em;
+      }
+      .research-item {
+        display: flex;
+        align-items: center;
+        word-wrap: break-word; /* Allow long words to break and wrap */
+      }
+      .research-item i {
+        margin-right: 0.5em;
+        font-size: 2em; /* Adjust icon size */
+        color: #ffffff; /*Icon color*/
+      }
+
+      /* Responsive design: stack columns on smaller screens */
+      @media (max-width: 600px) {
+        .research-interests {
+          grid-template-columns: 1fr; /* Single column on small screens */
+        }
+      }
+    </style>
+
+    <!-- Publications Section -->
+    <h3 id="publications">Publications</h3>
+    <p><strong>In Prep:</strong></p>
+    <ul>
+      <li>
+        "To collapse or not to collapse: Halo evolution with self-interacting
+        dark matter mass segregation" – Patil, Y., Fischer, M., Dolag, K. <a
+          href="https://www.overleaf.com/read/rfmbhhxpbgbr\#7c68c9"
+          target="_blank"
+          class="no-style-link">(Draft link)</a
+        >
+      </li>
+    </ul>
+
+    <!-- Education Section -->
+    <h3 id="education">Education</h3>
+    <ul class="education-list">
+      <li>
+        <div class="education-item">
+          <div>
+            <strong>M.Sc. Physics + B.E. Electrical and Electronics</strong><br
+            />
+            <a
+              href="https://www.bits-pilani.ac.in/goa/"
+              target="_blank"
+              class="no-style-link"
+              >Birla Institute of Technology and Science (BITS), Pilani</a
+            ><br />
+            <em
+              >Thesis: "Evolution of Dark Matter Halos with Two Species of
+              Self-Interacting Dark Matter"</em
+            >
+          </div>
+          <span>2019 - 2024</span>
+        </div>
+      </li>
+      <li>
+        <div class="education-item">
+          <div>
+            <strong>Higher Secondary Education</strong><br />
+            Vidyamandir Highschool, India
+          </div>
+          <span>2017 - 2019</span>
+        </div>
+      </li>
+      <li>
+        <div class="education-item">
+          <div>
+            <strong
+              >International General Certificate of Secondary Education (IGCSE)</strong
+            ><br />
+            Sanjay Ghodawat International School, India
+          </div>
+          <span>2017</span>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Styles for Education Section -->
+    <style>
+      .education-list {
+        list-style: none;
+        padding: 0;
+        margin: 1em 0;
+        font-size: 0.9em; /* Adjust font size for consistency */
+      }
+      .education-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #ddd; /* Line separating each education entry */
+      }
+      .education-item strong {
+        font-size: 1em;
+      }
+      .education-item em {
+        font-size: 0.9em;
+        color: #555; /* Slightly muted color for thesis title */
+      }
+      .education-item span {
+        font-weight: bold;
+        color: #4682b4; /* Consistent with skill bar color */
+      }
+      .no-style-link {
+        color: inherit; /* Inherit color from parent, no change in text color */
+        text-decoration: none; /* Remove underline */
+        font-weight: normal; /* Keep font weight consistent */
+      }
+    </style>
+
+    <!-- Skills Section -->
+    <h3 id="skills">Skills</h3>
+    <ul class="skills-list">
+      <li>
+        Python
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 75%;"></div>
+        </div>
+      </li>
+      <li>
+        C++
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 55%;"></div>
+        </div>
+      </li>
+      <li>
+        OpenGadget3
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        Data Analysis
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 75%;"></div>
+        </div>
+      </li>
+      <li>
+        Machine Learning
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 50%;"></div>
+        </div>
+      </li>
+      <li>
+        MATLAB
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 55%;"></div>
+        </div>
+      </li>
+      <li>
+        Project Management
+        <div class="thin-bar">
+          <div class="thin-fill" style="width: 75%;"></div>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Styles for Thin Horizontal Bars -->
+    <style>
+      .skills-list {
+        list-style: none;
+        padding: 0;
+        font-size: 0.9em; /* Reduced font size for skills */
+      }
+      .skills-list li {
+        margin: 0.8em 0; /* Adjusted spacing for better layout */
+        font-weight: bold;
+      }
+      .thin-bar {
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 6px; /* Very thin bars */
+        margin-top: 5px;
+      }
+      .thin-fill {
+        background-color: #a93db9; /* Glossy blue color */
+        height: 100%;
+        border-radius: 5px;
+        background: linear-gradient(
+          90deg,
+          #962b49,
+          #462176
+        ); /* Glossy effect */
+      }
+    </style>
+
+    <!-- Featured Projects Section -->
+    <h3 id="projects">Featured Projects</h3>
+    <p>
+      Here are a few projects that highlight my experience in astrophysics and
+      computational research:
+    </p>
+    <ul>
+      <li>
+        <b
+          ><a href="/Website/projects"
+            >Dark Matter Halo Evolution with Two Species of Self-Interacting
+            Dark Matter:</a
+          ></b
+        > Numerical Simulations in OpenGadget3 to study the evolution of a Dark Matter
+        halo with two different species of Self-interacting Dark Matter
+      </li>
+      <li>
+        <b
+          ><a href="/Website/projects"
+            >Signatures of Self-Interacting Dark Matter from Galaxies Falling
+            into Galaxy Clusters:</a
+          ></b
+        > Simulated an isolated galaxy falling into a cluster to study the warps
+        of galactic disk caused due to interactions in Dark Matter
+      </li>
+      <li>
+        <b><a href="/Website/projects">Cause of Variability in Stars:</a></b> Data
+        Analysis using python to detrmine varibility periods of delta cepheids.
+      </li>
+    </ul>
+    <p>
+      To read more about all my projects, <a href="/projects">click here</a>.
+    </p>
+
+    <!-- Contact and Social Links -->
+    <h3 id="contact">Contact</h3>
+    <p>
+      If you have any questions or would like to collaborate, please feel free
+      to reach out to me:
+    </p>
+    <p class="flex gap-x-4 gap-y-2 flex-wrap">
+      {
+        siteConfig.socialLinks.map((link) => (
+          <a
+            aria-label={link.text}
+            href={link.href}
+            target="_blank"
+            class="prose-link"
+          >
+            <i class:list={[link.icon]} />
+            {link.text}
+          </a>
+        ))
+      }
+    </p>
+    <p>
+      You can also email me at
+      <a
+        prose-link
+        aria-label={siteConfig.email}
+        href={`mailto:${siteConfig.email}`}
+      >
+        {siteConfig.email}
+      </a>.
+    </p>
+    <p>
+      Contact me over phone at
+      <a
+        prose-link
+        aria-label={siteConfig.phone}
+        href={`mailto:${siteConfig.phone}`}
+      >
+        {siteConfig.phone}
+      </a>.
+    </p>
+  </article>
+
+  <!-- Styles for Progress Bars -->
+  <style>
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+    .skills-list li {
+      margin: 0.5em 0;
+      font-weight: bold;
+    }
+    .progress-bar {
+      height: 10px;
+      border-radius: 5px;
+      margin-top: 5px;
+      background-color: #ddd;
+    }
+  </style>
+</BaseLayout>
