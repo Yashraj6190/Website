@@ -83,10 +83,10 @@ export const siteConfig = {
         text: 'Projects',
         href: '/Website/projects',
       },
-      // {
-      //   text: 'Blog',
-      //   href: '/Website/blog',
-      // },
+      {
+        text: 'Blog',
+        href: '/Website/blog',
+      },
     ],
   },
   page: {
