@@ -70,9 +70,9 @@ function getYear(date: Date | string | number) {
           <!-- Display Supervisor -->
           <div v-if="post.data.supervisor && post.data.supervisor.length > 0" class="opacity-50 text-sm">
             <strong>Supervisors:</strong>
-            <span v-for="(sup, index) in post.data.supervisor" :key="sup.name">
+            <span v-for="(sup, supIndex) in post.data.supervisor" :key="sup.name">
               <a :href="sup.url">{{ sup.name }}</a>
-              <span v-if="index < post.data.supervisor.length - 1">, </span>
+              <span v-if="supIndex < post.data.supervisor.length - 1">, </span>
             </span>
           </div>
           <!-- Display Time Duration -->
