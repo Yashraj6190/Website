@@ -4,7 +4,7 @@ supervisor: [
               { name: 'Dr. Moritz Firsher', url: 'https://moritzfischer.world' },
               { name: 'Dr. Klaus Dolag',  url: 'https://www.usm.uni-muenchen.de/~dolag/' } ,
               { name: 'Dr. T K Jha ',  url: 'https://www.bits-pilani.ac.in/goa/tarun-kumar-jha/' } ]
-timeDuration: Jan 2024 - May 2024
+timeDuration: Jan 2023 - Dec 2023
 duration: Duration ~ Jan 2023 - Dec 2023
 ---
 
