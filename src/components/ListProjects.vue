@@ -9,7 +9,7 @@ defineProps<{
     supervisor?: {
       name: string
       url: string
-    }
+    }[]
   }[]
 }>()
 </script>
