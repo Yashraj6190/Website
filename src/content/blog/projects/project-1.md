@@ -5,8 +5,8 @@ supervisor: [
               { name: 'Dr. Moritz Firsher', url: 'https://moritzfischer.world' },
               { name: 'Dr. Klaus Dolag',  url: 'https://www.usm.uni-muenchen.de/~dolag/' } ,
               { name: 'Dr. Ashish Chittora',  url: 'https://www.bits-pilani.ac.in/goa/ashish-chittora' } ]
-timeDuration: Jan 2024 - May 2025
-duration: Duration ~ Jan 2024 - May 2025
+timeDuration: Jan 2024 - July 2025
+duration: Duration ~ Jan 2024 - July 2025
 ---
 
 Masters thesis research conducted as a part of the Computational Astrophysics Group at Ludwig Maximilian University, Munich

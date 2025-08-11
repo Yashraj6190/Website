@@ -9,7 +9,7 @@ export const projectData: ProjectData = [
         description: 'Masters Thesis research carried out at the Computational Astrophysics group at Ludwig Maximilian University, Munich, jointly supervised by Dr. Moritz Fischer, Dr. Klaus Dolag and Dr. Ashish Chittora',
         icon: 'i-icon-park-solid-halo',
         href: '/Website/posts/projects/project-1',
-        duration: 'Jan 2024 - May 2024', // New field for duration
+        duration: 'Jan 2024 - July 2025', // New field for duration
         // supervisor: { name: 'John Doe', url: 'https://example.com/johndoe'}
       },
       {
