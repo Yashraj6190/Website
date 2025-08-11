@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 defineProps<{
   list: {
-    text: string
+    text?: string
     description?: string
     icon?: string
     href: string
     duration?: string
     supervisor?: {
-      name: string
-      url: string
+      name?: string
+      url?: string
     }[]
   }[]
 }>()

@@ -6,7 +6,7 @@ export type PostKey = 'blog'
 // Define the structure of your blog post entries
 export type CollectionPosts = CollectionEntry<PostKey> & {
   data: {
-    title: string
+    title?: string
     date?: string
     description?: string
     image?: {
@@ -32,7 +32,7 @@ export type CollectionPages = CollectionEntry<Pages>
 
 // Define the structure for the ProjectData array
 export type ProjectData = Array<{
-  title: string
+  title?: string
   projects: Array<{
     text: string
     description?: string
